@@ -1,27 +1,37 @@
-# Bookstore-Mangment-using-SQL
-This project involves the development and analysis of a Bookstore Database using SQL. The database is designed to efficiently manage information related to books and customers, including details such as book titles, authors, genres, publication years, prices, stock levels, and customer demographics.
-Key SQL / Business Questions
 
-How many total books are available in the bookstore?
+# 📚 Bookstore Management & Analytics System (SQL)
 
-Which books were published after the year 2000?
+## 📌 Project Overview
+This project focuses on building and analyzing a Relational Database for a Online/Retail Bookstore using **PostgreSQL / SQL**. The database manages core business entities such as **Books** and **Customers**, allowing the business to keep track of inventory metrics, pricing analysis, and customer demographics.
 
-Which books are the most expensive and least expensive?
+The main objective is to solve crucial business problems and operational questions using advanced SQL querying, data aggregation, and filtering techniques.
 
-What is the average price of all books?
+## 🗂️ Database Schema & Architecture
+The project utilizes two primary operational tables:
+* **Books Table:** Contains book metadata including Title, Author, Genre, Publication Year, Price, and Stock Levels.
+* **Customers Table:** Contains demographic info including Customer Name, Email, Location (City, Country).
 
-How many books belong to each genre?
+---
 
-Which genres have more than 2 books?
+## 🚀 Key Business Problems Solved (SQL Capabilities)
+The analysis script successfully delivers data-driven insights for the following management queries:
 
-Which books have low stock (less than 10 units)?
+### 📊 Inventory & Demographics Analysis
+* **Total Inventory Volume:** Counts total available titles.
+* **Low Stock Alerts:** Identifies high-risk books with stock levels falling below 10 units.
+* **Historical Distribution:** Isolates vintage titles vs modern releases (Post-2000).
 
-What are the top 5 most expensive books?
+### 💰 Financial & Pricing Insights
+* **Average Book Costing:** Provides statistical mean of pricing structures using `ROUND()`.
+* **Outlier Tracking:** Finds absolute maximum and minimum product costs using `LIMIT` and `ORDER BY`.
 
-Which is the oldest published book in the database?
+### 🎯 Segmentation & Categorization
+* **Genre Analysis:** Groups books dynamically and isolates major genres with heavy volumes using `HAVING` filters.
+* **Geographical Demographics:** Maps international customer density across global regions.
 
-How many customers belong to each country?
+---
 
-Which customers live in cities that start with the word “Lake”?
-
-Which customers belong to a specific country (e.g., Rwanda)?
+## 🛠️ How to Run This Project
+1. Clone this repository to your local system.
+2. Open your preferred SQL database management tool (e.g., pgAdmin, DBeaver, or MySQL Workbench).
+3. Copy the script from `bookstore_analysis.sql` and run it to setup the tables and fetch insights.
